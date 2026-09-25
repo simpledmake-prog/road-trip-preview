@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#1b1b1b" />
+    <title>Road Trip Build</title>
+    <link rel="icon" href="data:," />
+    <style>
+      @font-face {
+        font-family: 'Press Start 2P';
+        src: url('./assets/fonts/PressStart2P-Regular.ttf') format('truetype');
+        font-display: swap;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #1b1b1b;
+        overflow: hidden;
+        overscroll-behavior: none;
+      }
+      #game {
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      #game canvas {
+        touch-action: none;
+        display: block;
+      }
+      /* Прогрев шрифта до первого текста в Phaser */
+      #font-warmup {
+        position: absolute;
+        left: -9999px;
+        font-family: 'Press Start 2P';
+      }
+    </style>
+    <script>try{var u=new URL(location.href);if(!u.searchParams.has("debug")){u.searchParams.set("debug","1");history.replaceState(null,"",u)}}catch(e){}</script>
+    <script type="module" crossorigin src="./bundle/index-QCX0L_BA.js"></script>
+  </head>
+  <body>
+    <div id="game"></div>
+    <span id="font-warmup">.</span>
+  </body>
+</html>
